@@ -21,7 +21,6 @@ This is an Android application that allows users to view different types of docu
 ```
 
 
- 
 ```kotlin
 // Permission check code for getting document from storage
 
@@ -48,12 +47,13 @@ private fun requestStoragePermissions() {
 }
 ```
 
-
-
 ```kotlin
 // Try to open the document
 binding.docview.openDoc(this, filePath, 3, -1, false, DocEngine.MICROSOFT)
+```
 
+
+```kotlin
 //Extar code for change status bar color
 fun Activity.setStatusBarColor(colorResId: Int) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -76,6 +76,23 @@ private fun isColorLight(color: Int): Boolean {
     return darkness < 0.5
 }
 ```
+
+## Screenshots
+
+### Screenshot 1: Main Document Viewer Screen
+![Main Document Viewer](![main](https://github.com/user-attachments/assets/06811bc1-beb6-4b02-8a54-f2188cbf0d5e))
+
+### Screenshot 2: Document Open Screen
+![Document Open Screen](![pdf](https://github.com/user-attachments/assets/54db4952-f61b-4801-a71c-c4b41ff2b469))
+
+### Screenshot 3: Permissions Request Screen
+![Permissions Request](![word](https://github.com/user-attachments/assets/5d76b94f-6360-4663-bb0a-7f1d7bc7dcf5))
+
+### Screenshot 4: Error Handling Screen
+![Error Handling Screen](![ppt](https://github.com/user-attachments/assets/da89594b-1e65-4e63-87ae-840509c37630))
+
+### Screenshot 4: Error Handling Screen
+![Error Handling Screen](![excel](https://github.com/user-attachments/assets/46f94edb-7ba1-4cb8-8864-05e0d7d743a9))
 
 
 
