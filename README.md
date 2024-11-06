@@ -20,11 +20,7 @@ This is an Android application that allows users to view different types of docu
 To add code snippets with the "copy" option for users, you can use the `fence` (code block) syntax in Markdown. Here’s how you can do it:
 
 ```markdown
-### Example Code
 
-Below is an example of how to set the status bar color programmatically in the app:
-
-```kotlin
 // Inside an Activity
 fun Activity.setStatusBarColor(colorResId: Int) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -39,4 +35,8 @@ fun Activity.setStatusBarColor(colorResId: Int) {
     }
 }
 
+
+
+// Try to open the document
+binding.docview.openDoc(this, filePath, 3, -1, false, DocEngine.MICROSOFT)
 
