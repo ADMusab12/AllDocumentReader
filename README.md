@@ -15,10 +15,40 @@ This is an Android application that allows users to view different types of docu
 
 ## Installation
 
-
 ```markdown
 
-// Inside an Activity
+ // Add DocViewer library
+    implementation 'com.github.Victor2018:DocViewer:v3.0.3'
+
+// Permission check code for getting document from storage
+
+private fun requestStoragePermissions() {
+    when {
+        Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU -> {
+            if (!hasManageExternalStoragePermission()) {
+                val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION).apply {
+                    data = Uri.parse("package:${applicationContext.packageName}")
+                }
+                manageExternalStoragePermissionLauncher.launch(intent)
+            } else {
+                fetchFilesFromStorage()
+            }
+        }
+        else -> {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), REQUEST_READ_STORAGE)
+            } else {
+                fetchFilesFromStorage()
+            }
+        }
+    }
+}
+
+
+// Try to open the document
+binding.docview.openDoc(this, filePath, 3, -1, false, DocEngine.MICROSOFT)
+
+//Extar code for change status bar color
 fun Activity.setStatusBarColor(colorResId: Int) {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
         window.statusBarColor = ContextCompat.getColor(this, colorResId)
@@ -32,8 +62,16 @@ fun Activity.setStatusBarColor(colorResId: Int) {
     }
 }
 
+// Helper function to determine if the color is light
+private fun isColorLight(color: Int): Boolean {
+    val darkness = 1 - (0.299 * ((color shr 16) and 0xFF) +
+            0.587 * ((color shr 8) and 0xFF) +
+            0.114 * (color and 0xFF)) / 255
+    return darkness < 0.5
+}
 
 
-// Try to open the document
-binding.docview.openDoc(this, filePath, 3, -1, false, DocEngine.MICROSOFT)
+
+
+
 
