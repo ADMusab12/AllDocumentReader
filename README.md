@@ -16,17 +16,13 @@ This is an Android application that allows users to view different types of docu
 ## Installation
 
 ```kotlin
-// Your Kotlin code here
-```
-
-
- // Add DocViewer library
+// Add DocViewer library
     implementation 'com.github.Victor2018:DocViewer:v3.0.3'
-
-```kotlin
-// Your Kotlin code here
 ```
 
+
+ 
+```kotlin
 // Permission check code for getting document from storage
 
 private fun requestStoragePermissions() {
@@ -50,11 +46,11 @@ private fun requestStoragePermissions() {
         }
     }
 }
-
-```kotlin
-// Your Kotlin code here
 ```
 
+
+
+```kotlin
 // Try to open the document
 binding.docview.openDoc(this, filePath, 3, -1, false, DocEngine.MICROSOFT)
 
@@ -72,10 +68,6 @@ fun Activity.setStatusBarColor(colorResId: Int) {
     }
 }
 
-```kotlin
-// Your Kotlin code here
-```
-
 // Helper function to determine if the color is light
 private fun isColorLight(color: Int): Boolean {
     val darkness = 1 - (0.299 * ((color shr 16) and 0xFF) +
@@ -83,5 +75,9 @@ private fun isColorLight(color: Int): Boolean {
             0.114 * (color and 0xFF)) / 255
     return darkness < 0.5
 }
+```
+
+
+
 
 
