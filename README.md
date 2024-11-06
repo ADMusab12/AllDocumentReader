@@ -80,7 +80,7 @@ private fun isColorLight(color: Int): Boolean {
 ## Screenshots
 
 ### Screenshot 1: Main Document Viewer Screen
-![Main Document Viewer](![app_icon](https://github.com/user-attachments/assets/830e77b4-7a99-4dc5-bbf0-4be94c3f1e9a)
+![Alt text](![main](https://github.com/user-attachments/assets/429ab774-5091-4e24-a552-d7ffe59a6699)
 )
 
 
