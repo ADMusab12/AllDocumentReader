@@ -15,12 +15,13 @@ This is an Android application that allows users to view different types of docu
 
 ## Installation
 
+- Add this library for document view
 ```kotlin
 // Add DocViewer library
     implementation 'com.github.Victor2018:DocViewer:v3.0.3'
 ```
 
-
+- Add permission code 
 ```kotlin
 // Permission check code for getting document from storage
 
@@ -47,12 +48,14 @@ private fun requestStoragePermissions() {
 }
 ```
 
+- Syntax of document view 
 ```kotlin
 // Try to open the document
 binding.docview.openDoc(this, filePath, 3, -1, false, DocEngine.MICROSOFT)
 ```
 
 
+- Status bar color changer
 ```kotlin
 //Extar code for change status bar color
 fun Activity.setStatusBarColor(colorResId: Int) {
