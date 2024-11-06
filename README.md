@@ -80,20 +80,19 @@ private fun isColorLight(color: Int): Boolean {
 ## Screenshots
 
 ### Screenshot 1: Main Document Viewer Screen
+![screenshot](screenshots/main.jpg)
 
+### Screenshot 2: Pdf Viewer Screen
+![screenshot](screenshots/pdf.jpg)
 
+### Screenshot 3: Word Viewer Screen
+![screenshot](screenshots/word.jpg)
 
-### Screenshot 2: Document Open Screen
+### Screenshot 4: Powerpoint Viewer Screen
+![screenshot](screenshots/ppt.jpg)
+
+### Screenshot 4: Excel Viewer Screen
 ![screenshot](screenshots/excel.jpg)
-
-### Screenshot 3: Permissions Request Screen
-![Permissions Request](![word](https://github.com/user-attachments/assets/5d76b94f-6360-4663-bb0a-7f1d7bc7dcf5))
-
-### Screenshot 4: Error Handling Screen
-![Error Handling Screen](![ppt](https://github.com/user-attachments/assets/da89594b-1e65-4e63-87ae-840509c37630))
-
-### Screenshot 4: Error Handling Screen
-![Error Handling Screen](![excel](https://github.com/user-attachments/assets/46f94edb-7ba1-4cb8-8864-05e0d7d743a9))
 
 
 
