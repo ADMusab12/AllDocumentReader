@@ -84,7 +84,7 @@ private fun isColorLight(color: Int): Boolean {
 
 
 ### Screenshot 2: Document Open Screen
-![Document Open Screen](![pdf](https://github.com/user-attachments/assets/54db4952-f61b-4801-a71c-c4b41ff2b469))
+![screenshot](screenshots/excel.jpg)
 
 ### Screenshot 3: Permissions Request Screen
 ![Permissions Request](![word](https://github.com/user-attachments/assets/5d76b94f-6360-4663-bb0a-7f1d7bc7dcf5))
