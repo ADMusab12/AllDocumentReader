@@ -16,9 +16,6 @@ This is an Android application that allows users to view different types of docu
 ## Installation
 
 
-### 3. **Adding Code Snippets with Copy Option**
-To add code snippets with the "copy" option for users, you can use the `fence` (code block) syntax in Markdown. Here’s how you can do it:
-
 ```markdown
 
 // Inside an Activity
