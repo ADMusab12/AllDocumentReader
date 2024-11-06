@@ -72,6 +72,11 @@ private fun isColorLight(color: Int): Boolean {
 
 
 
+### Explanation:
 
+- **Separate Code Blocks**: Each section of code is placed in its own code block using triple backticks (```) to make it easier to copy and paste for the user.
+- **Code Copy Blocks**: Every section of code (for permissions, status bar color, DocViewer logic, etc.) is inside its own code block to provide clear separation and enable easy copying from the README.
+
+This structure ensures each code snippet is clearly separated and easily accessible for users who want to copy and use it.
 
 
